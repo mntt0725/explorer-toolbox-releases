@@ -1,29 +1,52 @@
-# Explorer Toolbox — Downloads
+<p align="center">
+  <img src="assets/icon_256.png" width="96" height="96" alt="Explorer Toolbox icon">
+</p>
 
-This repository hosts release builds (installer executables) for
-**Explorer Toolbox**, a Windows Explorer right-click file conversion
-utility. It does not contain source code — Explorer Toolbox is closed-source
-software. See each [Release](../../releases) for the installer and release
-notes.
+<h1 align="center">Explorer Toolbox</h1>
 
-## What is Explorer Toolbox?
+<p align="center">Windows Explorer の右クリックメニューから、そのままファイル変換。</p>
 
-Explorer Toolbox adds a right-click menu to Windows Explorer for converting
-image files (PNG, JPEG, WebP) without opening a separate app or website.
-Select one or more files, right-click, choose a target format, and the
-converted file appears in the same folder — entirely offline, with nothing
-uploaded anywhere.
+このリポジトリは **Explorer Toolbox のダウンロード配布専用**です。ソースコードは
+含まれていません（クローズドソースソフトウェアです）。インストーラは
+[Releases](../../releases) からダウンロードできます。
 
-## Download
+## これは何？
 
-Go to the [Releases page](../../releases) and download the latest
-`ExplorerToolboxSetup-*.exe`, then run it and follow the installer.
+Explorer Toolbox は、Windows Explorer の右クリックメニューに直接「ファイル変換」を
+追加する軽量ユーティリティです。
 
-Because the installer isn't yet code-signed, Windows SmartScreen may show a
-warning ("Windows protected your PC") the first time you run it. Click
-**More info**, then **Run anyway** to continue.
+- 画像ファイル（PNG / JPEG / WebP）を右クリック → 変換したい形式を選ぶだけ
+- 変換は **完全にローカルで完結**。ファイルはどこにもアップロードされません
+- 複数ファイルをまとめて選択して、一括変換も可能
 
-## License
+Webサイトにファイルをアップロードしたり、別のアプリを開いたりする必要はありません。
 
-Explorer Toolbox is proprietary software. See the End-User License Agreement
-included with the installer for terms of use.
+## インストール方法
+
+1. [Releases](../../releases) ページから最新の `ExplorerToolboxSetup-*.exe` をダウンロード
+2. ダウンロードしたファイルをダブルクリックして実行
+3. Windows SmartScreen の警告が出た場合（未署名アプリのため表示されることがあります）:
+   「**詳細情報**」→「**実行**」をクリックして進めてください
+4. インストーラの指示に従って進めるだけで完了です（管理者権限の確認画面が出ます）
+
+## 使い方
+
+1. PNG / JPEG / WebP のいずれかのファイルを右クリック（複数選択も可）
+2. **Windows 11の場合**: メニュー下部の「**その他のオプションを確認**」をクリック
+   （現時点ではここに表示されます。トップレベル表示は今後のアップデートで対応予定）
+3. 「**Explorer Toolbox**」→「**Convert**」→ 変換したい形式を選択
+4. 同じフォルダに `<元のファイル名>_convert.<拡張子>` として変換後のファイルが生成されます
+
+## アンインストール
+
+「設定」→「アプリ」→「Explorer Toolbox」から通常のアプリと同じ方法でアンインストールできます。
+
+## 動作環境
+
+- Windows 10 / 11 (64bit)
+- 追加のランタイムのインストールは不要です
+
+## ライセンス
+
+Explorer Toolbox はプロプライエタリ（closed-source）ソフトウェアです。利用条件は
+インストーラに含まれるEULA（使用許諾契約書）を参照してください。
